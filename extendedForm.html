@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dane osobowe</title>
+    <meta name="description" content="Opis stronyy">
+    <meta name="keywords" content="kluczowe,słowa,jakieś">
+</head>
+<body>
+
+<header>
+    <div></div>
+    <div>
+        <div>
+            <span>Strona</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="about" href="index.html">O nas</a></li>
+                <li><a id="menu" href="menu.html">Menu</a></li>
+                <li><a id="contact" href="contact.html">Kontakt</a></li>
+                <li><a id="formularz1" href="personalForm.html">Formularz osobowy</a></li>
+                <li><a id="formularz2" href="extendedForm.html">Formularz osobowy rozszerzony</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <form autocomplete="on">
+            <div>
+                <label for="kolor">Wybierz Ulubiony kolor</label>
+                <input type="color" id="kolor" name="kolor" value="#008000"/>
+            </div>
+            <div>
+                <label for="drugie-imie">Drugie imię</label>
+                <input id="drugie-imie" type="text" name="drugie-imie" placeholder="Amelia">
+            </div>
+            <div>
+                <label for="potrawa">Ulubiona potrawa</label>
+                <input id="potrawa" type="text" name="potrawa" placeholder="pizza">
+            </div>
+            <div>
+                <label for="wieczorynka">Ulubiona wieczorynka</label>
+                <input id="wieczorynka" type="text" name="wieczorynka" placeholder="Tabaluga">
+            </div>
+            <div>
+                <label for="szczesliwy-miesiac">Najszczęśliwszy miesiąc</label>
+                <input type="month" id="szczesliwy-miesiac" name="szczesliwy-miesiac"
+                       min="1900-01" value="2018-05"/>
+            </div>
+            <div>
+                <label for="zadowolenie-z-zycia">Zadowolenie z życia</label>
+                <input type="range" list="poziomy-zadowolenia" id="zadowolenie-z-zycia" step="10" min="-100" max="100">
+                <datalist id="poziomy-zadowolenia">
+                    <option value="-100" label="-100">
+                    <option value="-90">
+                    <option value="-80">
+                    <option value="-70">
+                    <option value="-60">
+                    <option value="-50">
+                    <option value="-40">
+                    <option value="-30">
+                    <option value="-20">
+                    <option value="-10">
+                    <option value="0" label="0">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50" label="50">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100" label="100">
+                </datalist>
+            </div>
+            <div>
+                <label for="szukam">Szukam</label>
+                <input type="search" id="szukam" name="szukam" placeholder="szczęścia">
+            </div>
+            <div>
+                <label for="github">Adres githuba:</label>
+                <input type="url" name="github" id="github" placeholder="https://sth.github.com"
+                       pattern="(https|http)://.*">
+            </div>
+
+            <button type="reset">Wyczyść</button>
+            <button type="submit">Wyślij</button>
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <span>Copyright &copy;2018 Kawiarnia</span>
+</footer>
+
+</body>
+</html>

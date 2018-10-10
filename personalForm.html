@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dane osobowe</title>
+    <meta name="description" content="Opis stronyy">
+    <meta name="keywords" content="kluczowe,słowa,jakieś">
+</head>
+<body>
+
+<header>
+    <div></div>
+    <div>
+        <div>
+            <span>Strona</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="about" href="index.html">O nas</a></li>
+                <li><a id="menu" href="menu.html">Menu</a></li>
+                <li><a id="contact" href="contact.html">Kontakt</a></li>
+                <li><a id="formularz1" href="personalForm.html">Formularz osobowy</a></li>
+                <li><a id="formularz2" href="extendedForm.html">Formularz osobowy rozszerzony</a></li>
+            </ul>
+        </nav>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <form autocomplete="on">
+            <div>
+                <input id="imie" type="text" name="imie" autofocus>
+                <label for="imie">Imię</label>
+            </div>
+            <div>
+                <input id="nazwisko" type="text" name="nazwisko" required>
+                <label for="nazwisko">Nazwisko</label>
+            </div>
+            <div>
+                <input list="month">
+                <label for="month">Miesiąc urodzenia</label>
+                <datalist id="month">
+                    <option value="stycznen">Styczeń</option>
+                    <option value="luty">Luty</option>
+                    <option value="marzec">Marzec</option>
+                    <option value="kwiecien">Kwiecień</option>
+                    <option value="maj">Maj</option>
+                </datalist>
+            </div>
+            <div>
+                <input id="telefon" type="tel" name="telefon" pattern="^(\d{3}-){2}\d{3}$">
+                <label for="telefon">Telefon</label>
+            </div>
+            <div>
+                <input id="email" type="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <button type="reset">Wyczyść</button>
+            <button type="submit">Wyślij</button>
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <span>Copyright &copy;2018 Kawiarnia</span>
+</footer>
+
+</body>
+</html>
