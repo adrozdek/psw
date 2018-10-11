@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>table,th,td {border:solid 1px;}</style>
     <meta charset="UTF-8">
     <title>Nasza Kawiarnia</title>
     <meta name="description" content="Najlepsza kawiarnia w Nowej Soli. Duży wybór lodów, ciast i deserów.">
@@ -9,10 +10,9 @@
 <body>
 
 <header>
-    <div></div>
     <div>
         <div>
-            <span>Strona</span>
+            <span>Nasza Kawiarnia</span>
         </div>
         <nav>
             <ul>
@@ -33,30 +33,18 @@
         <a href="#tabelka">Przejdź do tabelki</a>
         <section>
             <h3>Opinie o nas</h3>
-            <article>
-                <p>Świetne</p>
-                <footer>
-                    <p>
-                        Anna, 27.09.2019
-                    </p>
-                </footer>
-            </article>
-            <article>
-                <p>Cudowne</p>
-                <footer>
-                    <p>
-                        Iza, 27.09.2019
-                    </p>
-                </footer>
-            </article>
-            <article>
-                <p>Pyszne</p>
-                <footer>
-                    <p>
-                        Rafał, 27.09.2019
-                    </p>
-                </footer>
-            </article>
+            <details>
+                <summary>Świetne!</summary>
+                <p>Anna, 27.09.2019</p>
+            </details>
+            <details>
+                <summary>Cudowne!</summary>
+                <p>Iza, 27.09.2019</p>
+            </details>
+            <details>
+                <summary>Pyszne!</summary>
+                <p>Rafał, 27.09.2019</p>
+            </details>
         </section>
 
         <section>
@@ -80,9 +68,9 @@
                 <caption>Tabelka</caption>
                 <thead>
                 <tr>
-                    <th>&iquest; <a href="https://dev.w3.org/html5/html-author/charref">Znaki specjalne</a>&quest;
+                    <th>&iquest;<a href="https://dev.w3.org/html5/html-author/charref">Znaki specjalne</a>&quest;
                     </th>
-                    <th>Tytuł 2</th>
+                    <th style="color:blue">Tytuł 2</th>
                     <th>Tytuł 3</th>
                 </tr>
                 </thead>
@@ -91,17 +79,17 @@
                     <td colspan="3">Komórka 3x1</td>
                 </tr>
                 <tr>
-                    <td>&dollar;</td>
-                    <td rowspan="3">Komórka 1x3</td>
+                    <td style="text-align:right">&dollar;</td>
+                    <td rowspan="3" style="vertical-align:bottom">Komórka 1x3</td>
                     <td>Komórka 3</td>
                 </tr>
                 <tr>
-                    <td>&pound;</td>
-                    <td>Komórka 3</td>
+                    <td style="text-align:center">&pound;</td>
+                    <td style="text-align:center">Komórka 3</td>
                 </tr>
                 <tr>
                     <td>&euro;</td>
-                    <td>Komórka 3</td>
+                    <td style="text-align:right">Komórka 3</td>
                 </tr>
                 <tr>
                     <td>
@@ -111,7 +99,7 @@
                                  alt="Kliknij">
                         </a>
                     </td>
-                    <td>Komórka 2</td>
+                    <td style="vertical-align:top">Komórka 2</td>
                     <td>
                         <table>
                             <tr>
