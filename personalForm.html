@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Dane osobowe</title>
-    <meta name="description" content="Opis stronyy">
-    <meta name="keywords" content="kluczowe,słowa,jakieś">
+    <meta name="description" content="Wyślij dane osobowe do najlepszej kawiarni w Nowej Soli!">
+    <meta name="keywords" content="kawa,kawiarnia,nowasol,kontakt">
 </head>
 <body>
 
 <header>
-    <div></div>
     <div>
         <div>
-            <span>Strona</span>
+            <span>Dane osobowe</span>
         </div>
         <nav>
             <ul>
@@ -23,12 +22,12 @@
                 <li><a id="formularz2" href="extendedForm.html">Formularz osobowy rozszerzony</a></li>
             </ul>
         </nav>
-        </nav>
     </div>
 </header>
 
 <main>
     <section>
+        <h2>Formularz z danymi osobowymi</h2>
         <form autocomplete="on">
             <div>
                 <input id="imie" type="text" name="imie" autofocus>
@@ -39,9 +38,9 @@
                 <label for="nazwisko">Nazwisko</label>
             </div>
             <div>
-                <input list="month">
+                <input id="month" list="month-list">
                 <label for="month">Miesiąc urodzenia</label>
-                <datalist id="month">
+                <datalist id="month-list">
                     <option value="stycznen">Styczeń</option>
                     <option value="luty">Luty</option>
                     <option value="marzec">Marzec</option>
